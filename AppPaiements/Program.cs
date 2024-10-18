@@ -22,5 +22,30 @@ internal class Program
         pay2.AfficherDetails();
         pay3.AfficherDetails();
 
+
+
+
+        Paiement paiement1 = new Paiement(200.89, "Stradivarus");
+        Paiement paiement2 = new Paiement(20.89, "Shop");
+        Paiement paiement3 = new Paiement(87.35, "Stradivarus");
+
+
+        Utilisateur user1 = new Utilisateur ("Shekhina");
+        Utilisateur user2 = new Utilisateur("Bidossessi");
+        Utilisateur user3 = new Utilisateur("Aigline");
+
+
+        user1.AjouterPaiement (paiement1);
+        user1.AfficherInfos();
+
+
+        user2.AjouterPaiement(paiement2);
+        user2.AfficherInfos();
+
+
+        user3.AjouterPaiement(paiement3);
+        user3.AfficherInfos();
+
+
     }
 }
